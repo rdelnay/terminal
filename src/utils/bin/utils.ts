@@ -59,11 +59,13 @@ export const repo = async (args?: string[]): Promise<string> => {
   return 'Opening repository...';
 };
 
+/*
 export const donate = async (args?: string[]): Promise<string> => {
   window.open(packageJson.funding.url, '_blank');
 
   return 'Opening donation url...';
 };
+*/
 
 /*
 export const banner = (args?: string[]): string => {
@@ -109,7 +111,7 @@ Type 'help' to see list of available commands.
 The project is open-source 🎉 type 'repo' to check out the repository. Thanks to <a href="https://github.com/m4tt72/terminal">M4TT72</a> for the original project!
 
 New 🎉: Try out the new 'theme' command. See all available themes <a href="https://github.com/rdelnay/terminal/tree/master/docs/themes">in the docs</a>.
-New 🎉: New command 'neofetch', for you linux.
+New 🎉: New command 'neofetch', for you linux enthusiasts.
 --
 `;
 };
