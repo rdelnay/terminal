@@ -2,7 +2,7 @@ import packageJson from '../../../package.json';
 import * as bin from './index';
 
 export const help = async (args: string[]): Promise<string> => {
-  const commands = Object.keys(bin).sort().join(', ');
+  const commands = Object.keys(bin).sort().join('\n');
 
   return `Available commands:\n${commands}\n\n[tab]\t trigger completion.\n[ctrl+l] clear terminal.\n[ctrl+c] cancel command.`;
 };
@@ -31,6 +31,7 @@ export const email = async (args: string[]): Promise<string> => {
   return 'Opening mailto:rossdelnay@gmail.com...';
 };
 
+/*
 export const vi = async (args: string[]): Promise<string> => {
   return `why use vi? try 'emacs'.`;
 };
@@ -50,6 +51,7 @@ export const sudo = async (args?: string[]): Promise<string> => {
 
   return `Permission denied: unable to run the command '${args[0]}' as root.`;
 };
+*/
 
 export const repo = async (args?: string[]): Promise<string> => {
   setTimeout(function () {
